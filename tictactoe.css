@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --hover-glow: #363b3d;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #181a1b;
+    overflow:hidden
+}
+
+hr {
+    width: 100vw;
+    height: 2px;
+    background-color: #e8e6e3;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+h1{
+    color: #e8e6e3;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 6em;
+    margin: -.2em;
+    background-color: #050505;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    /* background-color: gray; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.tile {
+    width: 147px;
+    height: 147px;
+    
+    /* Text */
+    font-size: 150px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #e8e6e3;
+}
+
+.winner {
+    background-color: lightgray;
+    color: red;
+}
+
+
+.horizontal-line {
+    border-bottom: 3px solid #e8e6e3;
+}
+
+.vertical-line {
+    border-right: 3px solid #e8e6e3;
+}
+
+#reset{
+    display: flex;
+    border-radius: 24px;
+    height: 3em;
+    width: 10em;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1010;
+    color: #e8e6e3;
+    border-color: #0e1010;
+    
+    cursor: pointer;
+
+    
+    margin: auto;
+    margin-top: 2.5em;
+}
+
+#reset:hover{
+    -webkit-box-shadow: 0px 5px 20px 5px var(--hover-glow);
+    -moz-box-shadow: 0px 5px 20px 5px var(--hover-glow);
+    box-shadow: 0px 5px 20px 5px var(--hover-glow);
+}
